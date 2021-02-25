@@ -26,10 +26,51 @@ describe('Testing Authorization routes', () => {
     // expect(readFood.body).toBeTruthy();
   });
 
-  it('Should deny user that can\'t write', async () => {
-    // const writeFood = await request.post('/api/v2/food').set('Authorization', `Bearer ${user.token}`);
-
-    // expect(writeFood.status).toEqual(500);
+  it('should POST /signup creates a new user and sends an object with the user and the token to the client', async () => {
+ 
   });
 
+  it('should POST /signin with basic authentication headers logs in a user and sends an object with the user and the token to the client', async () => {
+
+  });
+
+  it('should POST /api/v1/:model adds an item to the DB and returns an object with the added item', async () => {
+  
+  });
+
+  it('should GET /api/v1/:model returns a list of :model items', async () => {
+  
+  });
+
+  it('should GET /api/v1/:model/ID returns a single item by ID', async () => {
+   
+  });
+
+  it('should PUT /api/v1/:model/ID returns a single, updated item by ID', async () => {
+    
+  });
+
+  it('should DELETE /api/v1/:model/ID returns an empty object. Subsequent GET for the same ID should result in nothing found', async () => {
+ 
+  });
+
+  it('should POST /api/v2/:model with a bearer token that has create permissions adds an item to the DB and returns an object with the added item', async () => {
+   
+  });
+
+  it('should GET /api/v2/:model with a bearer token that has read permissions returns a list of :model items', async () => {
+
+  });
+
+  it('should GET /api/v2/:model/ID with a bearer token that has read permissions returns a single item by ID', async () => {
+
+  });
+
+  it('should PUT /api/v2/:model/ID with a bearer token that has update permissions returns a single, updated item by ID', async () => {
+   
+  });
+
+  it('should DELETE /api/v2/:model/ID with a bearer token that has delete permissions returns an empty object. Subsequent GET for the same ID should result in nothing found', async () => {
+ 
+  });
 });
