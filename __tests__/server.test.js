@@ -4,7 +4,7 @@ const server = require('../src/server.js');
 const supergoose = require('@code-fellows/supergoose');
 const request = supergoose(server.server);
 
-describe('Testing Authorization routes', () => {
+xdescribe('Testing Authorization routes', () => {
   let user = null;
   it('Users with role \'user\' should only be able to read', async () => {
 
