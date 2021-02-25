@@ -22,8 +22,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(logger);
 
-app.use('/routes/v1', v1Routes);
-app.use('/routes/v2', v2Routes);
+app.use('/api/v1', v1Routes);
+app.use('/api/v2', v2Routes);
 
 
 app.use(authRoutes);
