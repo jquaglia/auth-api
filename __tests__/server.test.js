@@ -1,5 +1,7 @@
 'use strict';
 
+process.env.SECRET = 'banana';
+
 const server = require('../src/server.js');
 const supergoose = require('@code-fellows/supergoose');
 const request = supergoose(server.server);
